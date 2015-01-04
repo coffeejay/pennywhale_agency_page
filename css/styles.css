@@ -50,12 +50,14 @@ a:hover {
 
 .container.stripped {
   width: 100%;
-  padding: 0;
-  margin: 0;
+  padding: 100px;
+  margin-bottom:-100px;
+  height: 1800px;
 }
 
 .container.content {
   background: #ffffff;
+  color: #000;
 }
 
 
@@ -82,3 +84,61 @@ a:hover {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
 }
+
+.caption-style-1 {
+list-style-type: none;
+margin: 0px;
+padding: 0px;
+}
+.caption-style-1 li {
+float: left;
+padding: 0px;
+position: relative;
+overflow: hidden;
+}
+.caption-style-1 li:hover .caption {
+opacity: 1;
+}
+.caption-style-1 img {
+margin: 0px;
+padding: 0px;
+float: left;
+z-index: 4;
+}
+.caption-style-1 .caption {
+cursor: pointer;
+position: absolute;
+opacity: 0;
+-webkit-transition: all 0.45s ease-in-out;
+-moz-transition: all 0.45s ease-in-out;
+-o-transition: all 0.45s ease-in-out;
+-ms-transition: all 0.45s ease-in-out;
+transition: all 0.45s ease-in-out;
+}
+.caption-style-1 .blur {
+background-color: rgba(0,0,0,0.65);
+height: 262px;
+width: 460px;
+z-index: 5;
+position: absolute;
+border-radius: 6px;
+}
+.caption-style-1 .caption-text h1 {
+text-transform: uppercase;
+font-size: 22px;
+}
+.caption-style-1 .caption-text {
+z-index: 10;
+color: #fff;
+position: absolute;
+width: 420px;
+height: 500px;
+text-align: center;
+top: 70px;
+}
+
+.gallery_image{
+  border-radius: 1px;
+  border: 1px solid #eee; 
+}
+
