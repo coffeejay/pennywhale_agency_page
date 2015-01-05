@@ -223,3 +223,22 @@ a:hover {
   -webkit-transform: scale(1.2,1.2);
   transform: scale(1.2,1.2);
 }
+
+#footer{
+
+  background-color: #008E8E;
+
+}
+
+#footer h5{
+  color: #fff;
+}
+
+#footer p{
+  color: #fff;
+}
+
+#footer a.button{
+  border-color: #fff;
+  color: #fff;
+}
