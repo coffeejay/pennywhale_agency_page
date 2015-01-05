@@ -59,7 +59,6 @@ a:hover {
   width: 100%;
   padding: 100px;
   margin-bottom:-100px;
-  height: 1800px;
 }
 
 .container.content {
@@ -83,11 +82,10 @@ a:hover {
   height: 45px;
 }
 
-
 .tagline {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  font-size: 60px;
+  font-size: 50px;
   margin-bottom: 0;
   margin-top: -50px;
 }
@@ -101,7 +99,8 @@ a:hover {
 }
 
 .sub-tagline {
-  font-size: 30px;
+  font-size: 28px;
+  font-weight: 400;
 }
 
 .sub-tagline a {
@@ -138,86 +137,89 @@ a:hover {
   width: 50%;
   height: 30vw;
   overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-#work #cappio {
-  background: url('https://dl-web.dropbox.com/get/Screenshots/Screenshot%202015-01-04%2020.05.36.png?_subject_uid=17072852&w=AACcDF3D1lc086n8kXkxLb4qsxS_5fgIytvaaCzpOfEtfw');
+#work li .background {
   background-size: cover;
   height: 100%;
   width: 100%;
 }
 
-#work li > div {
+#work li:hover .background {
+  opacity: 0.1;
+}
+
+#work li .text {
+  display: none;
+  color: #ffffff;
+}
+
+#work li .text h4{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+#work li .text p{
+  font-size: 15px;
+  width: 80%;
+  margin-left: 10%;
+  font-family: "Cabin", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+#work li:hover .text {
+  display: inline;
+  opacity: 1;
+}
+
+#work #cappio .background{
+  background: url('https://dl-web.dropbox.com/get/Screenshots/Screenshot%202015-01-04%2020.05.36.png?_subject_uid=17072852&w=AACcDF3D1lc086n8kXkxLb4qsxS_5fgIytvaaCzpOfEtfw');
+  background-size: cover;
+}
+
+#work #cappio{
+  background: #2980b9;
+}
+
+#work #insuretrust {
+  background: #8e44ad;
+}
+
+#work #insuretrust .background{
+  background: url('http://upload.wikimedia.org/wikipedia/commons/a/a7/Atlanta_Skyline_from_Buckhead.jpg');
+  background-size: cover;
+}
+
+#work #startup-exchange {
+  background: #2ecc71;
+}
+
+#work #startup-exchange .background{
+  background: url('https://dl-web.dropbox.com/get/Screenshots/Screenshot%202015-01-05%2011.09.05.png?_subject_uid=17072852&w=AAAnvjsXw5K8L9s5jNMtNmnfnIryB6W57XZ-w0bDQD5rQg');
+  background-size: cover;
+}
+
+#work #bitvendr {
+  background: #f1c40f;
+}
+
+#work #bitvendr .background {
+  background: url('https://dl-web.dropbox.com/get/Screenshots/Screenshot%202015-01-05%2011.11.57.png?_subject_uid=17072852&w=AABLBESnaQa7M3nuLJ94v-TeIqzKU-ehNmOgH0EbssExeQ');
+  background-size: cover;
+}
+
+#work li a > div {
   -moz-transition: all .5s;
   -webkit-transition: all .5s;
   transition: all .5s;
-
 }
 
-#work li:hover > div {
+#work li:hover a > div {
   -moz-transform: scale(1.2,1.2);
   -webkit-transform: scale(1.2,1.2);
   transform: scale(1.2,1.2);
 }
-
-#work li:hover{
-  background: #000000;
-}
-
-.caption-style-1 {
-list-style-type: none;
-margin: 0px;
-padding: 0px;
-}
-.caption-style-1 li {
-float: left;
-padding: 0px;
-position: relative;
-overflow: hidden;
-}
-.caption-style-1 li:hover .caption {
-opacity: 1;
-}
-.caption-style-1 img {
-margin: 0px;
-padding: 0px;
-float: left;
-z-index: 4;
-}
-.caption-style-1 .caption {
-cursor: pointer;
-position: absolute;
-opacity: 0;
--webkit-transition: all 0.45s ease-in-out;
--moz-transition: all 0.45s ease-in-out;
--o-transition: all 0.45s ease-in-out;
--ms-transition: all 0.45s ease-in-out;
-transition: all 0.45s ease-in-out;
-}
-.caption-style-1 .blur {
-background-color: rgba(0,0,0,0.65);
-height: 262px;
-width: 460px;
-z-index: 5;
-position: absolute;
-border-radius: 6px;
-}
-.caption-style-1 .caption-text h1 {
-text-transform: uppercase;
-font-size: 22px;
-}
-.caption-style-1 .caption-text {
-z-index: 10;
-color: #fff;
-position: absolute;
-width: 420px;
-height: 500px;
-text-align: center;
-top: 70px;
-}
-
-.gallery_image{
-  border-radius: 1px;
-  border: 1px solid #eee; 
-}
-
