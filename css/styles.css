@@ -23,6 +23,9 @@ a:hover {
   text-decoration: none;
   line-height: 50px;
   font-size: 14px;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
 #nav li {
@@ -44,6 +47,10 @@ a:hover {
   transform: translateY(-50%);
 }
 
+.container {
+  text-align: center;
+}
+
 .container.full {
   height: 100%;
 }
@@ -56,8 +63,24 @@ a:hover {
 }
 
 .container.content {
-  background: #f8f8f8;
+  background: #ffffff;
   color: #106b81;
+}
+
+.container.header {
+  background: #008E8E;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-transform: uppercase;
+  height: 50px;
+  margin-bottom: -30px;
+}
+
+.container.header h5 {
+  font-weight: 700;
+  line-height: 45px;
+  height: 45px;
 }
 
 
@@ -66,6 +89,7 @@ a:hover {
   font-weight: 600;
   font-size: 60px;
   margin-bottom: 0;
+  margin-top: -50px;
 }
 
 .tagline em {
@@ -83,6 +107,61 @@ a:hover {
 .sub-tagline a {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
+}
+
+#what-we-do p{
+  font-size: 17px;
+  font-weight: 600;
+}
+
+#our-work {
+  padding: 0;
+  padding-top: 0;
+}
+
+#our-work h5{
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #00CACA;
+  padding: 8px;
+  display: inline;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+#work {
+  list-style: none;
+}
+
+#work li {
+  float: left;
+  width: 50%;
+  height: 30vw;
+  overflow: hidden;
+}
+
+#work #cappio {
+  background: url('https://dl-web.dropbox.com/get/Screenshots/Screenshot%202015-01-04%2020.05.36.png?_subject_uid=17072852&w=AACcDF3D1lc086n8kXkxLb4qsxS_5fgIytvaaCzpOfEtfw');
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#work li > div {
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+
+}
+
+#work li:hover > div {
+  -moz-transform: scale(1.2,1.2);
+  -webkit-transform: scale(1.2,1.2);
+  transform: scale(1.2,1.2);
+}
+
+#work li:hover{
+  background: #000000;
 }
 
 .caption-style-1 {
